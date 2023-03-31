@@ -37,7 +37,7 @@ namespace WFCrawler
                 string fileName = t.name + ".txt";
                 saveToFile(t, comps, players, storeDirectory, fileName);
                 close();
-                MessageBox.Show("Done!");
+ 
             }
         }
         public void open(string teamLink)
@@ -153,6 +153,7 @@ namespace WFCrawler
                     streamWriter.WriteLine(p);
                 }
             }
+            MessageBox.Show(String.Format("Done, directory of the file is: \n{0}", directory));
         }
 
     }
